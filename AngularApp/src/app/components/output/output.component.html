@@ -1,0 +1,55 @@
+
+<div class="input-wrapper">
+  <h3>Название</h3>
+  <div class="clear-input">
+    <form [formGroup]="form">
+
+      <input placeholder="Например, Титаник" type="text" class="inputForFilm" formControlName="searchInput">
+      <span class="close" onclick="this.previousElementSibling.value = ''">
+      &times;
+      </span>
+
+    </form>
+  </div>
+</div>
+
+
+<div class="film__container">
+
+  <ng-container *ngIf="(films$ !== null) ">
+    <ng-container *ngIf ="(films$ | async)!.length > 0; else notFound">
+      <a [routerLink]="['/film/', item.id]" class="film" *ngFor="let item of films$ | async">
+        <img src="{{item.image}}" alt="" class="image-film">
+        <div class="short-film-information">
+          <h2 class="name-film">{{item.name}}</h2>
+          <span class="year-film">{{item.year}}</span>
+        </div>
+      </a>
+    </ng-container>
+  </ng-container>
+
+
+
+  <ng-template class="" #notFound>
+    <div class="not-found">
+      <div class="not-image">
+      </div>
+          <div class="additional-information">
+          <p>
+            Фильм не найден
+          </p>
+          <a href="#" class="add-manually">
+            Добавьте вручную
+          </a>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template class=" " #empty>
+
+  </ng-template>
+</div>
+
+
+
+

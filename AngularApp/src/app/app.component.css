@@ -1,0 +1,12 @@
+body{
+  font-family: SF Pro Text, sans-serif;
+  margin: 0;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  margin-top: 82px;
+}

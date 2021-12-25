@@ -1,0 +1,29 @@
+<div class="manully__wrapper">
+  <div class="name-input">
+    <h3>
+      Название
+    </h3>
+    <input placeholder="Например, Титаник" type="text" class="inputForFilm">
+  </div>
+
+  <div class="year-input">
+    <h3>
+      Год
+    </h3>
+    <input placeholder="Укажите год выхода фильма" type="text" class="inputForFilm">
+  </div>
+
+  <app-genre-search formControlName="genre"></app-genre-search>
+
+  <div class="poster">
+    <h3>
+      Постер
+    </h3>
+    <button class="poster-btn">
+      <img src="../../../assets/upload.png" class="poster-img">
+    </button>
+  </div>
+
+  <app-save-button></app-save-button>
+</div>
+

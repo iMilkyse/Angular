@@ -1,0 +1,64 @@
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 60px;
+}
+
+input::placeholder {
+  color: rgba(60, 60, 67, 0.3);
+  font-size: 17px;
+}
+
+.genre {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  outline: none;
+}
+.genre:not(:last-child) {
+  border-bottom: 1px solid #cecece;
+}
+.genre__list {
+  width: auto;
+  height: 28px;
+  font-size: 15px;
+  display: flex;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 14px;
+  margin-top: 15px;
+}
+
+.backdrop {
+  background: transparent;
+}
+
+.chips {
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  display: flex;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 14px;
+  margin-top: 15px;
+  background: transparent;
+  margin-right: 5px;
+}
+
+.chips__list {
+  display: flex;
+}
+
+/*# sourceMappingURL=genre-search.component.css.map */

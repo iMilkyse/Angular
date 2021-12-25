@@ -1,0 +1,26 @@
+.save-btn {
+  width: 170px;
+  height: 38px;
+  background: transparent;
+  color: #002DFF;
+  border: 2px solid #002DFF;
+  border-radius: 21.5px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 68px;
+  cursor: pointer;
+}
+.save-btn img {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.save-btn:hover {
+  color: white;
+  background: #002DFF;
+}
+
+/*# sourceMappingURL=save-button.component.css.map */

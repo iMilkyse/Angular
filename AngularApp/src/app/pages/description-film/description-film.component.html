@@ -1,0 +1,40 @@
+<div class="description__wrapper">
+
+<ng-container *ngIf="currentFilm">
+
+  <div class="name">
+    <h3>
+      Название
+    </h3>
+    <span>{{currentFilm.name}}</span>
+    <hr>
+  </div>
+
+  <div class="year">
+    <h3>
+      Год
+    </h3>
+    <span>{{currentFilm.year}}</span>
+    <hr>
+  </div>
+
+  <div class="description">
+    <h3>
+      Описание
+    </h3>
+    <p>{{currentFilm.description}}</p>
+    <hr>
+  </div>
+
+  <div class="genre__information">
+    <h3>
+      Жанр
+    </h3>
+    <span>{{currentFilm.genre}}</span>
+    <hr>
+  </div>
+</ng-container>
+
+  <app-save-button></app-save-button>
+
+</div>
